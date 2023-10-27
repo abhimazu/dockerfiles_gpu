@@ -9,12 +9,6 @@ services:
     network_mode: host
     devices:
       - /dev/dri
-    # environment:
-    #   - DISPLAY=${DISPLAY}
-    #   - INPUT=${INPUT}
-    #   - DEVICE=${DEVICE}
-    #   - OUTPUT=${OUTPUT}
-    #   - SCRIPT_NAME=face_detection_and_classification
   gpu2:
     build:
       context: .
@@ -24,9 +18,3 @@ services:
     network_mode: host
     devices:
       - /dev/dri
-    # environment:
-    #   - DISPLAY=${DISPLAY}
-    #   - INPUT=${INPUT}
-    #   - DEVICE=GPU
-    #   - OUTPUT=${OUTPUT}
-    #   - SCRIPT_NAME=human_pose_estimation
